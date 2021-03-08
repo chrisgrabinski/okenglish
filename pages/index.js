@@ -5,7 +5,6 @@ import ButtonLink from "components/ButtonLink";
 import Card from "components/Card";
 import Container from "components/Container";
 import Emphasis from "components/Emphasis";
-import Grid from "components/Grid";
 import Layout from "components/Layout";
 import Section from "components/Section";
 import Stack from "components/Stack";
