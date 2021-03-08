@@ -68,42 +68,40 @@ export default function Home() {
         <Section id="misja">
           <Card isHighlight>
             <Container>
-              <div className="lg:grid lg:grid-cols-12 py-4 md:py-8 text-center">
-                <div className="lg:col-start-2 lg:col-end-12">
-                  <h2 className="font-medium text-secondary-400 tracking-wide">
-                    Misja
-                  </h2>
-                  <p className="mt-4 text-4xl sm:text-5xl">
-                    <strong className="font-bold">
-                      “Chcemy wspierać <Emphasis>Twoje ambicje</Emphasis> i
-                      towarzyszyć Ci w zdobywaniu nowych szczytów.”
-                    </strong>
+              <div className="py-8 md:py-16 mx-auto max-w-3xl text-center">
+                <h2 className="font-medium text-secondary-400 tracking-wide">
+                  Misja
+                </h2>
+                <p className="mt-4 text-4xl sm:text-5xl">
+                  <strong className="font-bold">
+                    “Chcemy wspierać <Emphasis>Twoje ambicje</Emphasis>{" "}
+                    i&nbsp;towarzyszyć Ci w zdobywaniu nowych szczytów.”
+                  </strong>
+                </p>
+                <p className="mt-4 text-lg sm:text-xl">
+                  Umożliwiamy Ci dokonanie tego na swoich własnych zasadach,
+                  oszczędzając czas i nerwy. Możesz uczyć się w wybranym przez
+                  siebie czasie z dowolnego zakątka na ziemi. Nasi trenerzy
+                  dopasują system nauki do Twoich celów i potrzeb, byś mógł bez
+                  przeszkód spełniać swoje marzenie o swobodnej konwersacji w
+                  języku angielskim.
+                </p>
+                <div className="mt-16">
+                  <Image
+                    className="rounded-2xl"
+                    src="/images/joanna-horanin-avatar.png"
+                    width="72"
+                    height="72"
+                    alt=""
+                  />
+                  <p className="font-medium text-lg text-secondary-400">
+                    Joanna Horanin
                   </p>
-                  <p className="mt-4 sm:text-xl">
-                    Umożliwiamy Ci dokonanie tego na swoich własnych zasadach,
-                    oszczędzając czas i nerwy. Możesz uczyć się w wybranym przez
-                    siebie czasie z dowolnego zakątka na ziemi. Nasi trenerzy
-                    dopasują system nauki do Twoich celów i potrzeb, byś mógł
-                    bez przeszkód spełniać swoje marzenie o swobodnej
-                    konwersacji w języku angielskim.
+                  <p>
+                    <small className="text-sm opacity-75">
+                      Założycielka OK English
+                    </small>
                   </p>
-                  <div className="mt-16">
-                    <Image
-                      className="rounded-2xl"
-                      src="/images/joanna-horanin-avatar.png"
-                      width="72"
-                      height="72"
-                      alt=""
-                    />
-                    <p className="font-medium text-lg text-secondary-400">
-                      Joanna Horanin
-                    </p>
-                    <p>
-                      <small className="text-sm opacity-75">
-                        Założycielka OK English
-                      </small>
-                    </p>
-                  </div>
                 </div>
               </div>
             </Container>
