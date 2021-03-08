@@ -127,7 +127,7 @@ export default function Home() {
                     <Emphasis>Twoich potrzeb</Emphasis>
                   </strong>
                 </p>
-                <p className="mt-4 sm:text-xl">
+                <p className="mt-4 text-lg sm:text-xl">
                   Idealne dla tych, którzy są zmęczeni tradycyjnymi metodami
                   nauczania, które nie przynoszą wymiernych efektów.
                 </p>
@@ -135,103 +135,99 @@ export default function Home() {
             </Grid>
           </Container>
           <Container>
-            <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-              <div className="lg:col-start-2 lg:col-end-12">
-                <div className="grid gap-8 md:grid-cols-3">
-                  <div className="md:col-span-3">
-                    <Card isHighlight>
-                      <div className="grid md:grid-cols-2 items-center gap-8">
-                        <div>
-                          <h3 className="font-bold text-2xl leading-tight">
-                            Treningi z native speakerem
-                          </h3>
-                          <p className="mt-4">
-                            Nasi native speakerzy zmienią Twoje nastawienie do
-                            języka, zmotywują do rozmowy i pomogą
-                            usystematyzować wiedzę bez nudy i frustracji.
-                          </p>
-                          <p className="mt-auto pt-12 font-medium">
-                            Dowiedz się więcej <span aria-hidden>→</span>
-                          </p>
-                        </div>
-                        <div className="-mx-6 md:-ml-0 -mb-8 md:-my-8">
-                          <div className="-mx-8 md:-ml-0 -mb-8 md:-my-6">
-                            <Image
-                              src="/images/native-speaker-trainers.png"
-                              width="496"
-                              height="384"
-                              alt=""
-                              className="w-full"
-                              layout="responsive"
-                            />
-                          </div>
-                        </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              <div className="md:col-span-3">
+                <Card isHighlight>
+                  <div className="grid md:grid-cols-2 items-center gap-8">
+                    <div>
+                      <h3 className="font-bold text-3xl leading-tight">
+                        Treningi z native speakerem
+                      </h3>
+                      <p className="mt-4 text-lg">
+                        Nasi native speakerzy zmienią Twoje nastawienie do
+                        języka, zmotywują do rozmowy i pomogą usystematyzować
+                        wiedzę bez nudy i frustracji.
+                      </p>
+                      <p className="mt-auto pt-12 font-medium sm:text-lg">
+                        Dowiedz się więcej <span aria-hidden>→</span>
+                      </p>
+                    </div>
+                    <div className="-mx-6 md:-ml-0 -mb-8 md:-my-8">
+                      <div className="-mx-8 md:-ml-0 -mb-8 md:-my-6">
+                        <Image
+                          src="/images/native-speaker-trainers.png"
+                          width="496"
+                          height="384"
+                          alt=""
+                          className="w-full"
+                          layout="responsive"
+                        />
                       </div>
-                    </Card>
+                    </div>
                   </div>
-                  <div className="md:col-span-1">
-                    <Card>
-                      <span
-                        className="text-3xl"
-                        role="img"
-                        aria-label="Military helmet"
-                      >
-                        🪖
-                      </span>
-                      <h3 className="mt-2 font-bold text-2xl leading-tight">
-                        Boot Camp <Badge>Marzec 2021</Badge>
-                      </h3>
-                      <p className="mt-4">
-                        Indywidualny, 4-tygodniowy trening konwersacji z native
-                        speakerem. Dla tych, co pragną przełamać barierę w
-                        mówieniu szybko i efektywnie{" "}
-                      </p>
-                      <p className="mt-auto pt-12 font-medium">
-                        Dowiedz się więcej <span aria-hidden>→</span>
-                      </p>
-                    </Card>
-                  </div>
-                  <div className="md:col-span-1">
-                    <Card>
-                      <span className="text-3xl" role="img" aria-label="Tent">
-                        ⛺️
-                      </span>
-                      <h3 className="mt-2 font-bold text-2xl leading-tight">
-                        Summer Camp <Badge>Lato 2021</Badge>
-                      </h3>
-                      <p className="mt-4">
-                        Indywidualny, 4-tygodniowy trening konwersacji z native
-                        speakerem. Dla tych, co pragną przełamać barierę w
-                        mówieniu szybko i efektywnie{" "}
-                      </p>
-                      <p className="mt-auto pt-12 font-medium">
-                        More information soon
-                      </p>
-                    </Card>
-                  </div>
-                  <div className="md:col-span-1">
-                    <Card>
-                      <span
-                        className="text-3xl"
-                        role="img"
-                        aria-label="Polish flag"
-                      >
-                        🇵🇱
-                      </span>
-                      <h3 className="mt-2 font-bold text-2xl leading-tight">
-                        Treningi z polskim lektorem
-                      </h3>
-                      <p className="mt-4">
-                        Zajęcia angielskiej konwersacji jeden na jeden,
-                        nastawione na Twoje cele. Idealne dla tych, którzy chcą
-                        przygotować się do rozmowy z native speakerem.
-                      </p>
-                      <p className="mt-auto pt-12 font-medium">
-                        Dowiedz się więcej <span aria-hidden>→</span>
-                      </p>
-                    </Card>
-                  </div>
-                </div>
+                </Card>
+              </div>
+              <div className="md:col-span-1">
+                <Card>
+                  <span
+                    className="text-3xl"
+                    role="img"
+                    aria-label="Military helmet"
+                  >
+                    🪖
+                  </span>
+                  <h3 className="mt-2 font-bold text-2xl leading-tight">
+                    Boot Camp <Badge>Marzec 2021</Badge>
+                  </h3>
+                  <p className="mt-4">
+                    Indywidualny, 4-tygodniowy trening konwersacji z native
+                    speakerem. Dla tych, co pragną przełamać barierę w mówieniu
+                    szybko i efektywnie{" "}
+                  </p>
+                  <p className="mt-auto pt-12 font-medium">
+                    Dowiedz się więcej <span aria-hidden>→</span>
+                  </p>
+                </Card>
+              </div>
+              <div className="md:col-span-1">
+                <Card>
+                  <span className="text-3xl" role="img" aria-label="Tent">
+                    ⛺️
+                  </span>
+                  <h3 className="mt-2 font-bold text-2xl leading-tight">
+                    Summer Camp <Badge>Lato 2021</Badge>
+                  </h3>
+                  <p className="mt-4">
+                    Indywidualny, 4-tygodniowy trening konwersacji z native
+                    speakerem. Dla tych, co pragną przełamać barierę w mówieniu
+                    szybko i efektywnie{" "}
+                  </p>
+                  <p className="mt-auto pt-12 font-medium">
+                    More information soon
+                  </p>
+                </Card>
+              </div>
+              <div className="md:col-span-1">
+                <Card>
+                  <span
+                    className="text-3xl"
+                    role="img"
+                    aria-label="Polish flag"
+                  >
+                    🇵🇱
+                  </span>
+                  <h3 className="mt-2 font-bold text-2xl leading-tight">
+                    Treningi z polskim lektorem
+                  </h3>
+                  <p className="mt-4">
+                    Zajęcia angielskiej konwersacji jeden na jeden, nastawione
+                    na Twoje cele. Idealne dla tych, którzy chcą przygotować się
+                    do rozmowy z native speakerem.
+                  </p>
+                  <p className="mt-auto pt-12 font-medium">
+                    Dowiedz się więcej <span aria-hidden>→</span>
+                  </p>
+                </Card>
               </div>
             </div>
           </Container>
@@ -239,9 +235,9 @@ export default function Home() {
         <Section id="recenzje">
           <Container>
             <div className="md:grid md:grid-cols-12 md:gap-8">
-              <div className="md:col-start-2 lg:col-start-3 md:col-end-12 lg:col-end-11">
+              <div className="md:col-start-2 md:col-end-12">
                 <div className="grid items-center md:grid-cols-2 gap-8">
-                  <div className="md:order-last">
+                  <div className="md:order-last flex justify-center">
                     <div className="mx-auto max-w-xs md:max-w-none">
                       <Image
                         src="/images/testimonials.png"
