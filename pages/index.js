@@ -17,24 +17,22 @@ export default function Home() {
       <Stack>
         <Section>
           <Container>
-            <Grid>
-              <div className="md:col-start-2 lg:col-start-3 md:col-end-12 lg:col-end-11 pt-16 md:pt-32 text-center">
-                <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl">
-                  Treningi angielskiej konwersacji, które zmienią{" "}
-                  <Emphasis>Twój język</Emphasis> na&nbsp;dobre
-                </h1>
-                <p className="mt-4 text-lg sm:text-xl md:text-2xl">
-                  Nie pozwól aby strach przed mówieniem blokował Cię przed
-                  spełnieniem marzeń o świetnie płatnej pracy, podróżach i
-                  rozwojem własnego biznesu.
-                </p>
-                <div className="mt-8">
-                  <ButtonLink href="/#oferta" size="large">
-                    Zobacz nasze oferty
-                  </ButtonLink>
-                </div>
+            <div className="max-w-3xl mx-auto pt-12 md:pt-24 text-center">
+              <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl">
+                Treningi angielskiej konwersacji, które zmienią{" "}
+                <Emphasis>Twój język</Emphasis> na&nbsp;dobre
+              </h1>
+              <p className="mt-4 text-lg sm:text-xl md:text-2xl">
+                Nie pozwól aby strach przed mówieniem blokował Cię przed
+                spełnieniem marzeń o świetnie płatnej pracy, podróżach i
+                rozwojem własnego biznesu.
+              </p>
+              <div className="mt-8">
+                <ButtonLink href="/#oferta" size="large">
+                  Zobacz nasze oferty
+                </ButtonLink>
               </div>
-            </Grid>
+            </div>
           </Container>
         </Section>
         <Section id="usps">
@@ -116,23 +114,21 @@ export default function Home() {
         </Section>
         <Section id="oferta">
           <Container>
-            <Grid>
-              <div className="md:col-start-2 md:col-end-11 text-center">
-                <h2 className="font-medium text-secondary-500 tracking-wide">
-                  Oferta
-                </h2>
-                <p className="mt-4 text-3xl sm:text-4xl">
-                  <strong className="font-bold">
-                    Nauka angielskiej konwersacji dostosowany do{" "}
-                    <Emphasis>Twoich potrzeb</Emphasis>
-                  </strong>
-                </p>
-                <p className="mt-4 text-lg sm:text-xl">
-                  Idealne dla tych, którzy są zmęczeni tradycyjnymi metodami
-                  nauczania, które nie przynoszą wymiernych efektów.
-                </p>
-              </div>
-            </Grid>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="font-medium text-secondary-500 tracking-wide">
+                Oferta
+              </h2>
+              <p className="mt-4 text-3xl sm:text-4xl">
+                <strong className="font-bold">
+                  Nauka angielskiej konwersacji dostosowany&nbsp;do{" "}
+                  <Emphasis>Twoich potrzeb</Emphasis>
+                </strong>
+              </p>
+              <p className="mt-4 text-lg sm:text-xl">
+                Idealne dla tych, którzy są zmęczeni tradycyjnymi metodami
+                nauczania, które nie&nbsp;przynoszą wymiernych efektów.
+              </p>
+            </div>
           </Container>
           <Container>
             <div className="grid gap-8 md:grid-cols-3">
