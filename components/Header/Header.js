@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" passHref>
             <a>
-              <Logo />
+              <Logo className="h-6 md:h-7" />
             </a>
           </Link>
           <nav className="flex flex-grow items-center pl-8">

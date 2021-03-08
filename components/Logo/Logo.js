@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import colors from "tailwindcss/colors";
 
-export default function Logo({ primaryColor, secondaryColor }) {
+export default function Logo({ className, primaryColor, secondaryColor }) {
   return (
-    <svg width="110" height="24" viewBox="0 0 110 24" fill="none">
+    <svg viewBox="0 0 110 24" className={className}>
       <g>
         <circle cx="36" cy="21" r="3" fill={secondaryColor} />
         <path
@@ -15,8 +15,6 @@ export default function Logo({ primaryColor, secondaryColor }) {
           fill={primaryColor}
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
           d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM18 12C18 15.3137 15.3137 18 12 18H6L7.75736 16.2426C6.67157 15.1569 6 13.6569 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z"
           fill={primaryColor}
         />
@@ -58,11 +56,13 @@ export default function Logo({ primaryColor, secondaryColor }) {
 }
 
 Logo.propTypes = {
+  className: PropTypes.string,
   primaryColor: PropTypes.string,
   secondaryColor: PropTypes.string,
 };
 
 Logo.defaultProps = {
+  className: null,
   primaryColor: colors.violet[800],
   secondaryColor: colors.amber[400],
 };
