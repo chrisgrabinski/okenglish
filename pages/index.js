@@ -1,44 +1,286 @@
+import Image from "next/image";
+
+import Badge from "components/Badge";
+import ButtonLink from "components/ButtonLink";
+import Card from "components/Card";
 import Container from "components/Container";
-import Stack from "components/Stack";
+import Emphasis from "components/Emphasis";
+import Grid from "components/Grid";
+import Layout from "components/Layout";
 import Section from "components/Section";
+import Stack from "components/Stack";
+import Usp from "components/Usp";
 
 export default function Home() {
   return (
-    <Stack>
-      <Section>
-        <Container>Hero</Container>
-      </Section>
-      <Section>
-        <Container>USPs</Container>
-      </Section>
-      <Section className="py-16 md:py-32 bg-primary-900 text-white">
-        <Container>Mission</Container>
-      </Section>
-      <Section>
-        <Container>For you</Container>
-      </Section>
-      <Section>
-        <Container>
-          <div className="md:grid md:grid-cols-12 md:gap-8">
-            <div className="md:col-start-2 md:col-end-12">Offer</div>
-          </div>
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <div className="md:grid md:grid-cols-12 md:gap-8">
-            <div className="md:col-start-2 lg:col-start-3 md:col-end-12 lg:col-end-11">
-              Testimonials
+    <Layout>
+      <Stack>
+        <Section>
+          <Container>
+            <Grid>
+              <div className="md:col-start-2 lg:col-start-3 md:col-end-12 lg:col-end-11 pt-16 md:pt-32 text-center">
+                <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl">
+                  Treningi angielskiej konwersacji, które zmienią{" "}
+                  <Emphasis>Twój język</Emphasis> na&nbsp;dobre
+                </h1>
+                <p className="mt-4 text-lg sm:text-xl md:text-2xl">
+                  Nie pozwól aby strach przed mówieniem blokował Cię przed
+                  spełnieniem marzeń o świetnie płatnej pracy, podróżach i
+                  rozwojem własnego biznesu.
+                </p>
+                <div className="mt-8">
+                  <ButtonLink href="/#oferta" size="large">
+                    Zobacz nasze oferty
+                  </ButtonLink>
+                </div>
+              </div>
+            </Grid>
+          </Container>
+        </Section>
+        <Section id="usps">
+          <Container>
+            <ul className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <li>
+                <Usp
+                  title="Przełam bariery"
+                  description="już od pierwszej lekcji"
+                />
+              </li>
+              <li>
+                <Usp
+                  title="Skup się na konwersacji"
+                  description="bez tracenia czasu na teorię"
+                />
+              </li>
+              <li>
+                <Usp
+                  title="Materiały autentyczne"
+                  description="bez sztampowych ćwiczeń"
+                />
+              </li>
+              <li>
+                <Usp
+                  title="Indywidualne podejście"
+                  description="Zapomnij o masówce"
+                />
+              </li>
+            </ul>
+          </Container>
+        </Section>
+        <Section id="misja">
+          <Card isHighlight>
+            <Container>
+              <div className="lg:grid lg:grid-cols-12 py-4 md:py-8 text-center">
+                <div className="lg:col-start-2 lg:col-end-12">
+                  <h2 className="font-medium text-secondary-400 tracking-wide">
+                    Misja
+                  </h2>
+                  <p className="mt-4 text-4xl sm:text-5xl">
+                    <strong className="font-bold">
+                      “Chcemy wspierać <Emphasis>Twoje ambicje</Emphasis> i
+                      towarzyszyć Ci w zdobywaniu nowych szczytów.”
+                    </strong>
+                  </p>
+                  <p className="mt-4 sm:text-xl">
+                    Umożliwiamy Ci dokonanie tego na swoich własnych zasadach,
+                    oszczędzając czas i nerwy. Możesz uczyć się w wybranym przez
+                    siebie czasie z dowolnego zakątka na ziemi. Nasi trenerzy
+                    dopasują system nauki do Twoich celów i potrzeb, byś mógł
+                    bez przeszkód spełniać swoje marzenie o swobodnej
+                    konwersacji w języku angielskim.
+                  </p>
+                  <div className="mt-16">
+                    <Image
+                      className="rounded-2xl"
+                      src="/images/joanna-horanin-avatar.png"
+                      width="72"
+                      height="72"
+                      alt=""
+                    />
+                    <p className="font-medium text-lg text-secondary-400">
+                      Joanna Horanin
+                    </p>
+                    <p>
+                      <small className="text-sm opacity-75">
+                        Założycielka OK English
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Container>
+          </Card>
+        </Section>
+        <Section id="for-you">
+          <Container>For you</Container>
+        </Section>
+        <Section id="oferta">
+          <Container>
+            <Grid>
+              <div className="md:col-start-2 md:col-end-11 text-center">
+                <h2 className="font-medium text-secondary-500 tracking-wide">
+                  Oferta
+                </h2>
+                <p className="mt-4 text-3xl sm:text-4xl">
+                  <strong className="font-bold">
+                    Nauka angielskiej konwersacji dostosowany do{" "}
+                    <Emphasis>Twoich potrzeb</Emphasis>
+                  </strong>
+                </p>
+                <p className="mt-4 sm:text-xl">
+                  Idealne dla tych, którzy są zmęczeni tradycyjnymi metodami
+                  nauczania, które nie przynoszą wymiernych efektów.
+                </p>
+              </div>
+            </Grid>
+          </Container>
+          <Container>
+            <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+              <div className="lg:col-start-2 lg:col-end-12">
+                <div className="grid gap-8 md:grid-cols-3">
+                  <div className="md:col-span-3">
+                    <Card isHighlight>
+                      <div className="md:grid md:grid-cols-2 md:gap-8">
+                        <div className="py-4">
+                          <h3 className="font-bold text-2xl leading-tight">
+                            Treningi z native speakerem
+                          </h3>
+                          <p className="mt-4">
+                            Nasi native speakerzy zmienią Twoje nastawienie do
+                            języka, zmotywują do rozmowy i pomogą
+                            usystematyzować wiedzę bez nudy i frustracji.
+                          </p>
+                          <p className="mt-auto pt-12 font-medium">
+                            Dowiedz się więcej <span aria-hidden>→</span>
+                          </p>
+                        </div>
+                        <div className="relative -my-8 -mr-12">
+                          <div
+                            className="absolute right-0"
+                            style={{
+                              top: `50%`,
+                              transform: `translateY(-50%)`,
+                            }}
+                          >
+                            <Image
+                              src="/images/native-speaker-trainers.png"
+                              width="496"
+                              height="384"
+                              alt=""
+                              className="h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                  <div className="md:col-span-1">
+                    <Card>
+                      <span
+                        className="text-3xl"
+                        role="img"
+                        aria-label="Military helmet"
+                      >
+                        🪖
+                      </span>
+                      <h3 className="mt-2 font-bold text-2xl leading-tight">
+                        Boot Camp <Badge>Marzec 2021</Badge>
+                      </h3>
+                      <p className="mt-4">
+                        Indywidualny, 4-tygodniowy trening konwersacji z native
+                        speakerem. Dla tych, co pragną przełamać barierę w
+                        mówieniu szybko i efektywnie{" "}
+                      </p>
+                      <p className="mt-auto pt-12 font-medium">
+                        Dowiedz się więcej <span aria-hidden>→</span>
+                      </p>
+                    </Card>
+                  </div>
+                  <div className="md:col-span-1">
+                    <Card>
+                      <span className="text-3xl" role="img" aria-label="Tent">
+                        ⛺️
+                      </span>
+                      <h3 className="mt-2 font-bold text-2xl leading-tight">
+                        Summer Camp <Badge>Lato 2021</Badge>
+                      </h3>
+                      <p className="mt-4">
+                        Indywidualny, 4-tygodniowy trening konwersacji z native
+                        speakerem. Dla tych, co pragną przełamać barierę w
+                        mówieniu szybko i efektywnie{" "}
+                      </p>
+                      <p className="mt-auto pt-12 font-medium">
+                        More information soon
+                      </p>
+                    </Card>
+                  </div>
+                  <div className="md:col-span-1">
+                    <Card>
+                      <span
+                        className="text-3xl"
+                        role="img"
+                        aria-label="Polish flag"
+                      >
+                        🇵🇱
+                      </span>
+                      <h3 className="mt-2 font-bold text-2xl leading-tight">
+                        Treningi z polskim lektorem
+                      </h3>
+                      <p className="mt-4">
+                        Zajęcia angielskiej konwersacji jeden na jeden,
+                        nastawione na Twoje cele. Idealne dla tych, którzy chcą
+                        przygotować się do rozmowy z native speakerem.
+                      </p>
+                      <p className="mt-auto pt-12 font-medium">
+                        Dowiedz się więcej <span aria-hidden>→</span>
+                      </p>
+                    </Card>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </Container>
-      </Section>
-      <Section className="py-16 md:py-32 bg-primary-900 text-white">
-        <Container>How to</Container>
-      </Section>
-      <Section>
-        <Container>Resources</Container>
-      </Section>
-    </Stack>
+          </Container>
+        </Section>
+        <Section id="recenzje">
+          <Container>
+            <div className="md:grid md:grid-cols-12 md:gap-8">
+              <div className="md:col-start-2 lg:col-start-3 md:col-end-12 lg:col-end-11">
+                <div className="grid items-center md:grid-cols-2 gap-8">
+                  <div className="md:order-last">
+                    <div className="mx-auto max-w-xs md:max-w-none">
+                      <Image
+                        src="/images/testimonials.png"
+                        alt=""
+                        width="352"
+                        height="448"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center md:text-left">
+                    <h2 className="font-medium text-secondary-400 tracking-wide">
+                      Recenzje
+                    </h2>
+                    <p className="mt-4 text-3xl sm:text-4xl">
+                      <strong className="font-bold">
+                        Nie wierz nam na&nbsp;słowo
+                      </strong>
+                    </p>
+                    <p className="mt-4 sm:text-xl">
+                      Szczęście klienta jest naszym priorytetem i nasi studenci
+                      mogą o&nbsp;tym&nbsp;zaświadczyć.
+                    </p>
+                    <div className="mt-8">
+                      <ButtonLink href="/recenzje">
+                        Zobacz, co mówią nasi studenci
+                      </ButtonLink>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </Section>
+      </Stack>
+    </Layout>
   );
 }

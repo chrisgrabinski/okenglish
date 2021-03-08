@@ -1,10 +1,19 @@
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-export default function Section({ className, children }) {
-  const sectionClassNames = classNames("rounded-4xl", className);
+import Anchor from "components/Anchor";
 
-  return <div className={sectionClassNames}>{children}</div>;
+export default function Section({ className, children, id }) {
+  const commonClassNames = "grid gap-16 rounded-4xl";
+  const sectionClassNames = classNames(commonClassNames, className);
+
+  return (
+    <section>
+      <Anchor id={id}>
+        <div className="grid gap-16">{children}</div>
+      </Anchor>
+    </section>
+  );
 }
 
 Section.propTypes = {
@@ -13,9 +22,11 @@ Section.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]).isRequired,
+  id: PropTypes.string,
 };
 
 Section.defaultProps = {
-  className: "",
+  className: null,
   children: null,
+  id: null,
 };
