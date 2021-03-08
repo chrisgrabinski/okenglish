@@ -22,7 +22,7 @@ export default function Home() {
                 Treningi angielskiej konwersacji, które zmienią{" "}
                 <Emphasis>Twój język</Emphasis> na&nbsp;dobre
               </h1>
-              <p className="mt-4 text-lg sm:text-xl md:text-2xl">
+              <p className="mt-4 sm:mt-8 text-lg sm:text-xl md:text-2xl">
                 Nie pozwól aby strach przed mówieniem blokował Cię przed
                 spełnieniem marzeń o świetnie płatnej pracy, podróżach i
                 rozwojem własnego biznesu.
