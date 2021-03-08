@@ -140,8 +140,8 @@ export default function Home() {
                 <div className="grid gap-8 md:grid-cols-3">
                   <div className="md:col-span-3">
                     <Card isHighlight>
-                      <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div className="py-4">
+                      <div className="grid md:grid-cols-2 items-center gap-8">
+                        <div>
                           <h3 className="font-bold text-2xl leading-tight">
                             Treningi z native speakerem
                           </h3>
@@ -154,20 +154,15 @@ export default function Home() {
                             Dowiedz się więcej <span aria-hidden>→</span>
                           </p>
                         </div>
-                        <div className="relative -my-8 -mr-12">
-                          <div
-                            className="absolute right-0"
-                            style={{
-                              top: `50%`,
-                              transform: `translateY(-50%)`,
-                            }}
-                          >
+                        <div className="-mx-6 md:-ml-0 -mb-8 md:-my-8">
+                          <div className="-mx-8 md:-ml-0 -mb-8 md:-my-6">
                             <Image
                               src="/images/native-speaker-trainers.png"
                               width="496"
                               height="384"
                               alt=""
-                              className="h-full object-cover"
+                              className="w-full"
+                              layout="responsive"
                             />
                           </div>
                         </div>
