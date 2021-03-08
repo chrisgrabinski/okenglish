@@ -7,7 +7,7 @@ const sizes = ["small", "medium", "large"];
 
 export default function ButtonLink({ children, href, isInverted, size }) {
   const commonClassNames =
-    "inline-flex items-center bg-primary-900 font-medium text-white rounded-full";
+    "inline-flex items-center bg-primary-900 font-medium text-white rounded-full tracking-wide";
   const colorClassNames = !isInverted
     ? "bg-primary-900 text-white"
     : "bg-white text-primary-900";
