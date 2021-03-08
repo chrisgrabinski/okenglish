@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 export default function Emphasis({ children, color }) {
-  const commonClasses = "whitespace-nowrap";
+  const commonClasses = "whitespace-nowrap border-b-4";
   const colorClasses =
-    color === "primary" ? "bg-secondary-300" : "bg-primary-900";
+    color === "primary" ? "border-secondary-300" : "border-primary-900";
 
   const emphasisClasses = classNames(commonClasses, colorClasses);
 
