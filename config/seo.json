@@ -1,0 +1,14 @@
+{
+  "title": "Lekcje Języka Angielskiego z lektorem online",
+  "titleTemplate": "%s | OK English",
+  "description": "Ucz się języka angielskiego poprzez mini lekcje video lub przez w 100% spersonalizowane, prywatne lekcje online z nauczycielem na żywo. Buduj słownictwo, opanuj gramatykę i mów po angielsku z pewnością siebie. Dowiedz się więcej teraz!",
+  "openGraph": {
+    "type": "website",
+    "locale": "pl",
+    "url": "https://okenglish.pl",
+    "site_name": "OK English"
+  },
+  "twitter": {
+    "cardType": "summary"
+  }
+}
