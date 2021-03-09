@@ -34,10 +34,6 @@ export default function Header({ logo: Logo }) {
   );
 }
 
-Header.propTypes = {
-  logo: PropTypes.node,
-};
-
 Header.defaultProps = {
   logo: DefaultLogo,
 };

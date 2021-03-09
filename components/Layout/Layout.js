@@ -18,10 +18,8 @@ Layout.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]).isRequired,
-  logo: PropTypes.node,
 };
 
 Layout.defaultProps = {
   children: null,
-  logo: undefined,
 };
