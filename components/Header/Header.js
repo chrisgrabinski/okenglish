@@ -16,7 +16,7 @@ export default function Header() {
               <Logo className="h-6 md:h-7" />
             </a>
           </Link>
-          <nav className="flex flex-grow items-center pl-8">
+          <nav className="hidden md:flex flex-grow items-center pl-8">
             <ul className="flex space-x-8">
               <li>Treningi 1 na 1</li>
               <li>Kursy</li>
