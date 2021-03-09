@@ -162,64 +162,70 @@ export default function Home() {
               </div>
               <div className="md:col-span-1">
                 <Card>
-                  <span
-                    className="text-3xl"
-                    role="img"
-                    aria-label="Military helmet"
-                  >
-                    🪖
-                  </span>
-                  <h3 className="mt-2 font-bold text-2xl leading-tight">
-                    Boot Camp <Badge>Marzec 2021</Badge>
-                  </h3>
-                  <p className="mt-4">
-                    Indywidualny, 4-tygodniowy trening konwersacji z native
-                    speakerem. Dla tych, co pragną przełamać barierę w mówieniu
-                    szybko i efektywnie{" "}
-                  </p>
-                  <p className="mt-auto pt-12 font-medium">
-                    Dowiedz się więcej <span aria-hidden>→</span>
-                  </p>
+                  <div className="flex flex-col h-full">
+                    <span
+                      className="text-3xl"
+                      role="img"
+                      aria-label="Military helmet"
+                    >
+                      🪖
+                    </span>
+                    <h3 className="mt-2 font-bold text-2xl leading-tight">
+                      Boot Camp <Badge>Marzec 2021</Badge>
+                    </h3>
+                    <p className="mt-4">
+                      Indywidualny, 4-tygodniowy trening konwersacji z native
+                      speakerem. Dla tych, co pragną przełamać barierę w
+                      mówieniu szybko i efektywnie{" "}
+                    </p>
+                    <p className="mt-auto pt-12 font-medium">
+                      Dowiedz się więcej <span aria-hidden>→</span>
+                    </p>
+                  </div>
                 </Card>
               </div>
               <div className="md:col-span-1">
                 <Card>
-                  <span className="text-3xl" role="img" aria-label="Tent">
-                    ⛺️
-                  </span>
-                  <h3 className="mt-2 font-bold text-2xl leading-tight">
-                    Summer Camp <Badge>Lato 2021</Badge>
-                  </h3>
-                  <p className="mt-4">
-                    Indywidualny, 4-tygodniowy trening konwersacji z native
-                    speakerem. Dla tych, co pragną przełamać barierę w mówieniu
-                    szybko i efektywnie{" "}
-                  </p>
-                  <p className="mt-auto pt-12 font-medium">
-                    More information soon
-                  </p>
+                  <div className="flex flex-col h-full">
+                    <span className="text-3xl" role="img" aria-label="Tent">
+                      ⛺️
+                    </span>
+                    <h3 className="mt-2 font-bold text-2xl leading-tight">
+                      Summer Camp <Badge>Lato 2021</Badge>
+                    </h3>
+                    <p className="mt-4">
+                      Indywidualny, 4-tygodniowy trening konwersacji z native
+                      speakerem. Dla tych, co pragną przełamać barierę w
+                      mówieniu szybko i efektywnie{" "}
+                    </p>
+                    <p className="mt-auto pt-12 font-medium">
+                      More information soon
+                    </p>
+                  </div>
                 </Card>
               </div>
               <div className="md:col-span-1">
                 <Card>
-                  <span
-                    className="text-3xl"
-                    role="img"
-                    aria-label="Polish flag"
-                  >
-                    🇵🇱
-                  </span>
-                  <h3 className="mt-2 font-bold text-2xl leading-tight">
-                    Treningi z polskim lektorem
-                  </h3>
-                  <p className="mt-4">
-                    Zajęcia angielskiej konwersacji jeden na jeden, nastawione
-                    na Twoje cele. Idealne dla tych, którzy chcą przygotować się
-                    do rozmowy z native speakerem.
-                  </p>
-                  <p className="mt-auto pt-12 font-medium">
-                    Dowiedz się więcej <span aria-hidden>→</span>
-                  </p>
+                  <div className="flex flex-col h-full">
+                    <span
+                      className="text-3xl"
+                      role="img"
+                      aria-label="Polish flag"
+                    >
+                      🇵🇱
+                    </span>
+                    <h3 className="mt-2 font-bold text-2xl leading-tight">
+                      Treningi z polskim lektorem
+                    </h3>
+                    <p className="mt-4">
+                      Zajęcia angielskiej konwersacji jeden na jeden, nastawione
+                      na Twoje cele. Idealne dla tych, którzy chcą przygotować
+                      się do rozmowy z native speakerem.
+                    </p>
+                    <p className="mt-auto pt-12 font-medium">
+                      Dowiedz się więcej <span aria-hidden>→</span>
+                    </p>
+                  </div>
                 </Card>
               </div>
             </div>

@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 export default function Card({ children, isHighlight }) {
   const commonClassNames =
-    "relative flex flex-col h-full px-6 py-8 rounded-4xl overflow-hidden";
+    "relative h-full px-8 py-8 rounded-4xl overflow-hidden";
   const defaultClassNames = classNames(
     commonClassNames,
     "border-4 border-secondary-200"
