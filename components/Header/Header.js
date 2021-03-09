@@ -1,12 +1,13 @@
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 import Container from "components/Container";
-import Logo from "components/Logo";
+import DefaultLogo from "components/Logo";
 
 import { Wrapper } from "./Header.styled";
 import ButtonLink from "components/ButtonLink";
 
-export default function Header() {
+export default function Header({ logo: Logo }) {
   return (
     <Wrapper className="sticky top-0 z-40 -mx-6 px-6 h-16 md:h-20  flex items-center bg-secondary-50 bg-opacity-90">
       <Container>
@@ -32,3 +33,11 @@ export default function Header() {
     </Wrapper>
   );
 }
+
+Header.propTypes = {
+  logo: PropTypes.node,
+};
+
+Header.defaultProps = {
+  logo: DefaultLogo,
+};

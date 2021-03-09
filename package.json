@@ -10,6 +10,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "anchorme": "^2.1.2",
     "classnames": "^2.2.6",
     "date-fns": "^2.19.0",
     "next": "10.0.8",

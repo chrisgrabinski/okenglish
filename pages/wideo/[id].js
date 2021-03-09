@@ -1,4 +1,5 @@
 import { NextSeo, VideoJsonLd } from "next-seo";
+import anchorMe from "anchorme";
 
 import { getAllVideoPaths, getVideoData } from "lib/youtube";
 
@@ -6,10 +7,12 @@ import { composeDate } from "helpers/date";
 import { composeDuration } from "helpers/duration";
 
 import Breadcrumbs from "components/Breadcrumbs";
-import Card from "components/Card";
 import Container from "components/Container";
 import Layout from "components/Layout";
+import LogoVideo from "components/LogoVideo";
 import YouTubeVideo from "components/YouTubeVideo";
+
+import BreakfastCard from "components/views/video/BreakfastCard";
 
 export default function Video({ videoData }) {
   const thumbnail =
@@ -18,6 +21,8 @@ export default function Video({ videoData }) {
     videoData?.thumbnails.default;
 
   const cleanDescription = videoData?.description?.replace(/\s+/g, " ");
+  const formattedDescription = anchorMe(videoData?.description);
+
   const formattedPublishedAt = composeDate(videoData.publishedAt);
   const formattedDuration = composeDuration(videoData?.duration);
 
@@ -32,18 +37,8 @@ export default function Video({ videoData }) {
     },
   ];
 
-  const {
-    description,
-    duration,
-    id,
-    publishedAt,
-    thumbnails,
-    title,
-    viewCount,
-  } = videoData;
-
   return (
-    <Layout>
+    <Layout logo={LogoVideo}>
       <Container>
         <YouTubeVideo
           videoId={videoData.id}
@@ -55,7 +50,7 @@ export default function Video({ videoData }) {
           }}
         />
         <div className="mt-8 grid md:grid-cols-12 gap-8">
-          <div className="md:col-span-8">
+          <div className="md:col-span-7 lg:col-span-8">
             <h1 className="font-bold text-3xl sm:text-4xl">
               {videoData.title}
             </h1>
@@ -65,10 +60,13 @@ export default function Video({ videoData }) {
               </time>{" "}
               | <time dateTime={videoData.duration}>{formattedDuration}</time>
             </p>
-            <p className="mt-4 text-lg">{videoData.description}</p>
+            <div
+              className="mt-4 text-lg whitespace-pre-wrap"
+              dangerouslySetInnerHTML={{ __html: formattedDescription }}
+            />
           </div>
-          <div className="md:col-span-4">
-            <Card isHighlight>Test</Card>
+          <div className="md:col-span-5 lg:col-span-4">
+            <BreakfastCard />
           </div>
         </div>
       </Container>
