@@ -1,11 +1,12 @@
 import Link from "next/link";
-import PropTypes from "prop-types";
 
+import ButtonLink from "components/ButtonLink";
 import Container from "components/Container";
 import DefaultLogo from "components/Logo";
 
+import SiteNavigation from "./SiteNavigation";
+
 import { Wrapper } from "./Header.styled";
-import ButtonLink from "components/ButtonLink";
 
 export default function Header({ logo: Logo }) {
   return (
@@ -18,12 +19,7 @@ export default function Header({ logo: Logo }) {
             </a>
           </Link>
           <nav className="hidden md:flex flex-grow items-center pl-8">
-            <ul className="flex space-x-8">
-              <li>Treningi 1 na 1</li>
-              <li>Kursy</li>
-              <li>Resources</li>
-              <li>Kontakt</li>
-            </ul>
+            <SiteNavigation />
             <div className="ml-auto">
               <ButtonLink href="/">Take the test</ButtonLink>
             </div>
