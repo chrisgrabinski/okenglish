@@ -10,7 +10,7 @@ import { Wrapper } from "./Header.styled";
 
 export default function Header({ logo: Logo }) {
   return (
-    <Wrapper className="sticky top-0 z-40 -mx-6 px-6 h-16 md:h-20  flex items-center bg-secondary-50 bg-opacity-90">
+    <Wrapper className="sticky top-0 z-40 px-3 md:px-6 -mx-3 md:-mx-6 h-16 md:h-20  flex items-center bg-secondary-50 bg-opacity-90">
       <Container>
         <div className="flex items-center">
           <Link href="/" passHref>
